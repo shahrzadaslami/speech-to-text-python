@@ -1,12 +1,11 @@
-import speech_recognition as sr
+
+from happytransformer import HappyTextToText
+from happytransformer import TTSettings
 
 
+happy_tt = HappyTextToText("T5",  "prithivida/grammar_error_correcter_v1")
+text = "gec: " + "you are good for english"
+settings = TTSettings(do_sample=True, top_k=10, temperature=0.5,  min_length=1, max_length=100)
+result = happy_tt.generate_text(text, args=settings)
 
-r = sr.Recognizer()
-with sr.Microphone() as source:
-    # read the audio data from the default microphone
-    audio_data = r.record(source, duration=5)
-    print("Recognizing...")
-    # convert speech to text
-    text = r.recognize_google(audio_data)
-    print(text)
+print(result.text)
