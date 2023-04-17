@@ -3,6 +3,8 @@ from happytransformer import HappyTextToText
 from happytransformer import TTSettings
 
 
+#this code will corect your gramatical errors
+
 happy_tt = HappyTextToText("T5",  "prithivida/grammar_error_correcter_v1")
 text = "gec: " + "you are good for english"
 settings = TTSettings(do_sample=True, top_k=10, temperature=0.5,  min_length=1, max_length=100)

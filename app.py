@@ -1,6 +1,8 @@
 import speech_recognition as sr
 
 
+#use a prerecorded file to track speech recognition
+
 filename = "speech.wav"
 
 r = sr.Recognizer()

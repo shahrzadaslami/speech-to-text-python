@@ -1,5 +1,7 @@
 import speech_recognition as sr
 
+
+#use your microphone to record your voice to text
 r = sr.Recognizer()
 with sr.Microphone() as source:
     # read the audio data from the default microphone
