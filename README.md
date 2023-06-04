@@ -1,1 +1,1 @@
-# Speech to text by python and 
+# Speech to text by python 
