@@ -3,7 +3,7 @@ from happytransformer import HappyTextToText
 from happytransformer import TTSettings
 
 
-#this code will corect your gramatical errors
+#this code will corect your gramatical mistakes
 
 happy_tt = HappyTextToText("T5",  "prithivida/grammar_error_correcter_v1")
 text = "gec: " + "we no are open tomorrow"
